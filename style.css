@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'prstartk';
+    src: url('Press Start K.otf');
+}
+
+body {font-family: "Press Start K", sans-serif;
+    background-color: black;
+color: white;}
+
+
+/**Header & nav**/
+
+
+li {font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;}
+
+#nav_bar {
+        height:10%;
+        width: 100%;
+        position: fixed;
+        line-height: 5%;
+        z-index: 1;
+        display: block;
+        }
+
+ #nav_bar ul {
+    padding-top: 20px;
+    text-align: center;
+    
+ }
+
+#nav_bar ul li {
+    display:inline-block;
+    list-style: none;
+}
+
+#nav_bar ul li a {
+    color:white;
+    text-decoration: none;
+    padding:0px 24px;
+    font-size: 16px;
+}
+
+/**main image**/
+
+#Pacman_logo {
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+
+}
+
+.animation1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    animation-name: animation1;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation1
+{
+    0%   {transform: translate(1000px)}
+
+    100% {transform: translate(-1200px)}
+ }
+
+
+
+.pacmanface { 
+float: left;
+
+}
+
+.pacmanface_left {
+    transform: rotate(180deg);
+   
+}
+
+.coins {
+    text-align: center;
+    padding-top: 60px;
+    text-transform:translate(-50%,-50%) ;
+}
+
+.coins h2 {
+    padding-bottom: 100px;
+    animation:blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0%{opacity:0;}
+    50%{opacity:.5;}
+    100%{opacity:1;}
+
+}
+
+
+hr {width: 100%;
+height: 2px;
+border: none;
+background-color: yellow;
+}
+
+/**players section**/
+
+h1 {text-align: center;
+padding-top: 60px;
+color: yellow;}
+
+h2 {text-align: center;
+padding-top: 20px;}
+
+
+.score {
+   text-align: center;
+   padding-top: 20px;
+  
+}
+
+.score_table {
+    display: inline;
+    font-size: 24px;
+    border-spacing: 160px 0;
+}
+
+.score_table th {padding-bottom: 50px;}
+
+.score_table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+}
+
+.one {
+    color:orange;
+}
+
+.two {
+    color:red;
+}
+
+.three {
+    color:aqua;
+}
+
+.four {
+    color:pink
+}
+
+.five {
+    color:orange;
+}
+
+.six {
+    color:red;
+}
+
+.seven {
+    color:aqua;
+}
+
+.eight {
+    color:pink;
+}
+
+.nine {
+    color:orange;
+}
+
+.ten {
+    color:red;
+}
+
+.hr_2 {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: yellow;
+    margin-top:120px;
+    }
+    
+
+/** how to play section **/
+
+.animation2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+    animation-name: animation2;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes animation2
+{
+
+     0% {transform: translate(-1200px)}
+    100% {transform: translate(1000px)}
+ }
+
+
+
+
+.instruction1 {
+    margin-bottom: 40px;
+}
+
+.instruction2 {
+    color:yellow;
+    font-size: 24px;
+}
+
+span {
+    font-size: 24px;
+    letter-spacing: 0.8px;
+}
+
+.hr_3 {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: yellow;
+    margin-top:120px;
+    margin-bottom: 100px;
+    }
+
+.players{
+    text-align: center;
+    padding-top: 20px;
+    align-items: center;
+
+}
+
+.player_table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding-bottom:20px;
+    border-spacing:24px;
+}
+
+
+.red {
+    color:red;
+}
+
+.pink {
+    color: pink;
+}
+
+.aqua {
+    color:aqua;
+}
+
+.orange {
+    color: orange;
+}
+
+.pts {
+    Display:flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+   align-items: center;
+}
+
+.blue_ghost {
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+
+#points-list {
+    display: inline;
+    font-size: 24px;
+    border-spacing: 60px 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+.point1 {
+    color: yellow;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+
+
+.point2 {
+    color: yellow;
+    font-size: 30px;
+   
+}
+
+
+/**footer**/
+#pacman_footer {
+    text-align: center;
+    padding-top:100px;
+}
+
